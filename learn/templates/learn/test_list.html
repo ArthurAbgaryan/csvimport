@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test_list</title>
+</head>
+<body>
+{% for obj in objects %}
+<p>ID объекта:</p>
+{{obj.id}}
+{% if obj.color_group_ID%}
+<p>color_group_ID объекта:</p>
+{{obj.color_group_id}}
+{% endif %}
+<p>Название объекта:</p>
+{{obj.title}}
+<p>Изображние объекта:</p>
+<img src="{{obj.picture}}">
+
+
+{% endfor %}
+</body>
+</html>
